@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Nivo::Rails::VERSION
   gem.authors       = ["Robin Dupret"]
   gem.email         = ["robin.dupret@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Nivo slider with Ruby on Rails}
+  gem.summary       = %q{This gem allows you to use Nivo slider with Ruby on Rails}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
