@@ -1,22 +1,13 @@
 module NivoHelper
-  def slider(files, hash = {})
-    options = { :theme => :default }
+  def nivo_slider(hash = {}, &block)
+    options = { :theme => :default, :id => "slider" }
     options.merge!(hash)
+    klass = "slide-wrapper theme-#{options[:theme]}"
+    id = options[:id]
 
-    content_tag(:div, :class => "slider-wrapper theme-#{options[:theme]}") do
-      content_tag(:div, :class => "nivoSlider #{options[:class]}", :id => "#{options[:id]}") do
-        content = ""
-
-        files.each do |file|
-          if file.kind_of?(String)
-            content += image_tag file, :data => { :thumb => file }
-          elsif file.kind_of?(Array)
-            content += image_tag file[0], :data => { :thumb => file[0] },
-                                          :title => file[1]
-          end
-        end
-
-        content
+    content_tag(:div, :id => id, :class => klass) do
+      content_tag(:div, :class => "nivoSlider #{options[:class]}") do
+        yield
       end
     end
 
