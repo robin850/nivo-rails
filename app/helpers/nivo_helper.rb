@@ -4,7 +4,7 @@ module NivoHelper
     options.merge!(hash)
 
     content_tag(:div, :class => "slider-wrapper theme-#{options[:theme]}") do
-      content_tag(:div, :class => "nivoSlider #{options[:class]}", :id => "#{options[:id]}")
+      content_tag(:div, :class => "nivoSlider #{options[:class]}", :id => "#{options[:id]}") do
         content = ""
 
         files.each do |file|
