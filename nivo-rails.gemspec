@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["robin.dupret@gmail.com"]
   gem.description   = %q{Nivo slider with Ruby on Rails}
   gem.summary       = %q{This gem allows you to use Nivo slider with Ruby on Rails}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/robin850/nivo-rails"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
