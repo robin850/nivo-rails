@@ -1,4 +1,5 @@
-require "nivo-rails/version"
+require "nivo/version"
+require "nivo/rails/engine"
 
 module Nivo
   module Rails
