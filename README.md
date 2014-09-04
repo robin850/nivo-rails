@@ -37,6 +37,14 @@ That's it! You can now make slideshows in your web pages easily. The code requir
 <% end %>
 ~~~
 
+If you use turbolinks dont forget add to your JavaScrpt file
+
+~~~javascript
+$(document).on('page:change', function () {
+    $('#slider').nivoSlider();
+});
+~~~
+
 Enjoy!
 
 ## Contributing
