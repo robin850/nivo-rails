@@ -31,7 +31,7 @@ Just make the same thing in your javascript application file:
 That's it! You can now make slideshows in your web pages easily. The code required by NivoSlider is pretty boring to write. You can simply use the `nivo_slider` helper like that:
 
 ~~~erb
-<%= nivo_slider do %>
+<%= nivo_slider id: 'slider' do %>
   <%= image_tag "foo.png", :title => "Caption" %>
   <%= image_tag "bar.png" %>
 <% end %>
