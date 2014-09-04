@@ -137,7 +137,7 @@
 
 .theme-light .nivoSlider {
     position: relative;
-    background: #fff image-url("light/loading.gif") no-repeat 50% 50%;
+    background: #fff image_url("light/loading.gif") no-repeat 50% 50%;
     margin-bottom: 10px;
     overflow: visible;
 }
@@ -165,7 +165,7 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: image-url("light/bullets.png") no-repeat;
+    background: image_url("light/bullets.png") no-repeat;
     text-indent: -9999px;
     border: 0;
     margin: 0 2px;
@@ -179,7 +179,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background: image-url("light/arrows.png") no-repeat;
+    background: image_url("light/arrows.png") no-repeat;
     text-indent: -9999px;
     border: 0;
     top: auto;
@@ -237,7 +237,7 @@
 
 .theme-default .nivoSlider {
     position: relative;
-    background: #fff image-url("default/loading.gif") no-repeat 50% 50%;
+    background: #fff image_url("default/loading.gif") no-repeat 50% 50%;
     margin-bottom: 10px;
     -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
     -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
@@ -265,7 +265,7 @@
     display: inline-block;
     width: 22px;
     height: 22px;
-    background: image-url("default/bullets.png") no-repeat;
+    background: image_url("default/bullets.png") no-repeat;
     text-indent: -9999px;
     border: 0;
     margin: 0 2px;
@@ -279,7 +279,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background: image-url("default/arrows.png") no-repeat;
+    background: image_url("default/arrows.png") no-repeat;
     text-indent: -9999px;
     border: 0;
     opacity: 0;
@@ -339,7 +339,7 @@
 
 .theme-dark .nivoSlider {
     position: relative;
-    background: #fff image-url("dark/loading.gif") no-repeat 50% 50%;
+    background: #fff image_url("dark/loading.gif") no-repeat 50% 50%;
     margin-bottom: 10px;
     overflow: visible;
 }
@@ -367,7 +367,7 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: image-url("dark/bullets.png") no-repeat 0 2px;
+    background: image_url("dark/bullets.png") no-repeat 0 2px;
     text-indent: -9999px;
     border: 0;
     margin: 0 2px;
@@ -381,7 +381,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background: image-url("dark/arrows.png") no-repeat;
+    background: image_url("dark/arrows.png") no-repeat;
     text-indent: -9999px;
     border: 0;
     top: auto;
@@ -445,7 +445,7 @@
 
 .theme-bar .nivoSlider {
     position: relative;
-    background: #fff image-url("bar/loading.gif") no-repeat 50% 50%;
+    background: #fff image_url("bar/loading.gif") no-repeat 50% 50%;
 }
 
 .theme-bar .nivoSlider img {
@@ -494,7 +494,7 @@
     display: inline-block;
     width: 22px;
     height: 22px;
-    background: image-url("bar/bullets.png") no-repeat;
+    background: image_url("bar/bullets.png") no-repeat;
     text-indent: -9999px;
     border: 0;
     margin: 5px 2px 0 2px;
