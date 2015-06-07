@@ -56,6 +56,11 @@ Make sure then to initialize Nivo Slider on the given element:
 $(window).load(function() {
   $('#slider').nivoSlider();
 });
+
+// Or if you are using Turbolinks
+$(document).on('page:change', function () {
+  $('#slider').nivoSlider();
+});
 ~~~
 
 Enjoy!
