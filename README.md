@@ -1,8 +1,7 @@
-# Nivo with Ruby on Rails
+# Nivo Slider with Ruby on Rails
 
-NivoSlider is one of the most Javascript slider. There was unfortunately no good integration for Ruby on Rails so I write my own. Feel free to contribute to improve this project if you want.
-
-This gem requires Rails 3.1+ (with the asset pipeline enabled).
+Nivo Slider is one of the most popular JavaScript slider. This gem provides
+integration with Ruby on Rails.
 
 ## Installation
 
@@ -16,25 +15,47 @@ Then run the `bundle` command to install the gem.
 
 ## Usage
 
-This gem provides files required to setup correctly NivoSlider to your site. It requires few lines of code to make a slideshow works. First, edit your `application.css` file and add at the top:
+This gem provides files required to setup correctly NivoSlider on your site.
+It requires a few lines of code to setup a slideshow. First, make sure to
+import the CSS file:
 
 ~~~css
-*= require nivo
+/* Inside a normal application.css file
+ *= require nivo
+ */
 ~~~
 
-Just make the same thing in your javascript application file:
-
-~~~coffeescript
-# require nivo
+~~~sass
+// Inside an application.scss or application.sass
+@import "nivo";
 ~~~
 
-That's it! You can now make slideshows in your web pages easily. The code required by NivoSlider is pretty boring to write. You can simply use the `nivo_slider` helper like that:
+And then import the JavaScript file as well:
+
+~~~javascript
+//= require nivo
+~~~
+
+You can now easily add slideshows in your web pages. To avoid writing all the
+boilerplate needed by Nivo Slider, you can rely on the `nivo_slider` tag:
 
 ~~~erb
-<%= nivo_slider do %>
-  <%= image_tag "foo.png", :title => "Caption" %>
+<%= nivo_slider, id: "slider" do %>
+  <%= image_tag "foo.png", title: "A very nice photo!" %>
   <%= image_tag "bar.png" %>
 <% end %>
+~~~
+
+This helper behaves like Action View's `content_tag` helper apart from the fact that
+it **doesn't** escape the provided content by default. It also sets the div's id
+to `"slider"` by default and adds a `nivoSlider` class as well.
+
+Make sure then to initialize Nivo Slider on the given element:
+
+~~~javascript
+$(window).load(function() {
+  $('#slider').nivoSlider();
+});
 ~~~
 
 Enjoy!
@@ -49,4 +70,5 @@ Enjoy!
 
 ## License
 
-This project is released under the MIT license. Please see the `LICENSE` file for more information.
+This project is released under the MIT license. Please see the `LICENSE` file for
+more information.
