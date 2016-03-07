@@ -40,7 +40,7 @@ You can now easily add slideshows in your web pages. To avoid writing all the
 boilerplate needed by Nivo Slider, you can rely on the `nivo_slider` tag:
 
 ~~~erb
-<%= nivo_slider, id: "slider" do %>
+<%= nivo_slider id: "slider" do %>
   <%= image_tag "foo.png", title: "A very nice photo!" %>
   <%= image_tag "bar.png" %>
 <% end %>
