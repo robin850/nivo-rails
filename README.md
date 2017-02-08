@@ -56,7 +56,7 @@ with the proper class:
 ~~~erb
 <div class="theme-dark">
   <%= nivo_slider id: "slider" do %>
-    <!-- ... ->
+    <!-- ... -->
   <% end %>
 </div>
 ~~~
