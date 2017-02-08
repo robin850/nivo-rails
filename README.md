@@ -50,6 +50,17 @@ This helper behaves like Action View's `content_tag` helper apart from the fact 
 it **doesn't** escape the provided content by default. It also sets the div's id
 to `"slider"` by default and adds a `nivoSlider` class as well.
 
+If you want to set a theme, you should wrap the `nivo_slider` call with a `div` element
+with the proper class:
+
+~~~erb
+<div class="theme-dark">
+  <%= nivo_slider id: "slider" do %>
+    <!-- ... ->
+  <% end %>
+</div>
+~~~
+
 Make sure then to initialize Nivo Slider on the given element:
 
 ~~~javascript
