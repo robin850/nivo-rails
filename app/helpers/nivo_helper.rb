@@ -14,11 +14,11 @@ module NivoHelper
     options[:id] ||= "slider"
 
     if content_or_options.kind_of?(Hash) && !block_given?
-      content_tag_string(:div, "", options, escape)
+      content_tag(:div, "", options, escape)
     elsif block_given?
-      content_tag_string(:div, capture(&block), options, escape)
+      content_tag(:div, capture(&block), options, escape)
     else
-      content_tag_string(:div, content_or_options, options, escape)
+      content_tag(:div, content_or_options, options, escape)
     end
   end
 end
